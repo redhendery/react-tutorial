@@ -6,12 +6,17 @@
 </head>
 <body>
 <div id="content"></div>
-<script src="https://fb.me/react-0.14.6.js"></script>
-<script src="https://fb.me/react-dom-0.14.6.js"></script>
+<script src="https://fb.me/react-15.0.1.js"></script>
+<script src="https://fb.me/react-dom-15.0.1.js"></script>
 <script src="http://fb.me/JSXTransformer-0.12.1.js"></script>
 <script type="text/jsx">
-/*Add your React code here*/
+var App =React.createClass({
+  render: function(){
+    return (<div>Hello World</div>);
+  }
+});
 
+ReactDOM.render(<App profileDATA={DATA} />, document.getElementById('content'));
 
 </script>
 </body>
